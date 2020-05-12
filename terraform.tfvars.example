@@ -87,7 +87,7 @@ admin_package_upgrade = true
 
 admin_shape   = "VM.Standard.E2.1"
 
-admin_timezone= "Australia/Sydney"
+admin_timezone= "Brazil/Brasilia"
 
 # availability_domains
 
@@ -114,9 +114,9 @@ dashboard_enabled = false
 kubernetes_version = "LATEST"
 
 node_pools = {
-  np1 = ["VM.Standard2.1", 3]
-  #np2 = ["VM.Standard2.8", 4]
-  #np3 = ["VM.Standard1.4", 5]
+  np1 = ["VM.Standard.E2.2", 3]
+  np2 = ["VM.Standard.E2.2", 4]
+  np3 = ["VM.Standard.E2.2", 5]
 }
 
 node_pool_name_prefix = "np"
