@@ -4,6 +4,7 @@ api_fingerprint = ""
 
 api_private_key_path = ""
 
+# Please dont put the root compartment!!!! - Cristiano
 compartment_id = ""
 
 tenancy_id = ""
@@ -17,7 +18,8 @@ ssh_public_key_path = ""
 # general oci parameters
 label_prefix = "dev"
 
-region = "us-phoenix-1"
+# Select the correct region - Cristiano
+region = "us-ashburn-1"
 
 # networking
 
@@ -51,7 +53,7 @@ vcn_name = "oke vcn"
 
 bastion_access = "ANYWHERE"
 
-bastion_enabled = true
+bastion_enabled = false
 
 bastion_image_id = "Autonomous"
 
@@ -65,11 +67,12 @@ bastion_notification_topic= "bastion_server_notification"
 
 bastion_package_upgrade = false
 
+# If you want the bastion, select the exactly name of the shape - Cristiano
 bastion_shape = "VM.Standard.E2.1"
 
-bastion_timezone = "Australia/Sydney"
+bastion_timezone = "Brazil/Brasilia"
 
-admin_enabled = true
+admin_enabled = false
 
 admin_image_id = "Oracle"
 
@@ -113,6 +116,7 @@ dashboard_enabled = false
 
 kubernetes_version = "LATEST"
 
+# Please verify the exactly name - Cristiano
 node_pools = {
   np1 = ["VM.Standard.E2.2", 3]
   np2 = ["VM.Standard.E2.2", 4]
